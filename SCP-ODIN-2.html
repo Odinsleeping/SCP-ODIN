@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP Foundation</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        .bk-square{
+            background-color: white;
+            margin-left: 230px;
+            margin-right: 230px;
+            margin-top: 50px;
+            padding-bottom: 80px;
+          
+        }
+        .SCP-ODIN{
+            font-size: 57px;
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+        .Obj-class{
+            font-size: 22px;
+            padding-left: 39px;
+            padding-top: 10px;
+            color: grey;
+        }
+        .Redacted{
+            background-color: rgb(187, 0, 17);
+            color: antiquewhite;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border: 2px solid black;
+        }
+        .Connected-to{
+            padding-top: 10px;
+            padding-left: 34px;
+            font-size: 17px;
+            color: grey;
+        }
+        .Object-Class{
+            font-weight: bold;
+        }
+        .Scp-connected-to{
+            padding-left: 15px;
+            margin-left: 5px;
+        }
+        .Scp-odin-pic{
+            size: 20px;
+            margin-left: 383px;
+            margin-top: -135px;
+            cursor: pointer;          
+        }
+        .Scp-odin-size{
+            width: 390px;
+            margin-left: 78px;
+            border-radius: 10px;
+            margin-top: 3px;
+            border-color: black;
+            border: 5px solid #555;
+        }
+        .Special-Containtment{
+            margin-top: -240px;
+            margin-left: 61px;
+            font-size: 23px;
+            font-weight: bold;
+        }
+        .Special-Containtment-text{
+            font-size: 19px;
+            display: inline-block;
+            margin-right: 420px;
+            margin-left: 14px;
+            margin-top: 10px;
+            color: rgb(0, 0, 0);
+        }
+        .SCP-ODIN-TEXT{
+            font-size: 20px;
+            margin-left: 615px;
+            margin-top: -153px;
+            font-weight: 600;
+           
+        }
+        .Euclid-img{
+            width: 120px;
+            margin-left: 465px;
+            margin-top: 5px;
+            display: block;
+        }
+        .Sentient-img{
+            width: 124px;
+            display: block;
+            margin-top: -120px;
+            margin-left: 600px;
+        }
+        .Adictive-img{
+            width: 123px;
+            display: block;
+            margin-top: -120px;
+            margin-left: 740px;
+        }
+        .Line{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .Description{
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 23px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        .Description-text{
+            margin-top: 5px;
+            border: 2px solid #555;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+        }
+      .description-1{
+        margin-left: 7px;
+        font-size: 19px;
+        margin-top: 4px;
+        margin-right: 5px;
+        display: block;
+      }
+      .description-2{
+        font-size: 19px;
+        margin-top: 15px;
+        margin-left: 15px;
+      }
+      .description-3{
+        font-size: 19px;
+        margin-top: 15px;
+        margin-left: 1px;
+      }
+      .description-4{
+        font-size: 19px;
+        margin-top: 13px;
+        margin-left: 1px;
+      }
+      .description-5{
+        font-size: 19px;
+        margin-top: 15px;
+        margin-left: 1px;
+      }
+      .description-6{
+        font-size: 19px;
+        margin-top: 15px;
+        margin-left: 1px;
+      }
+      .Note-description{
+        font-size: 19px;
+        margin-top: 20px;
+        margin-left: -10px;
+        padding-bottom: 10px;
+      }
+      .Note-css{
+        font-weight: bold;
+        margin-left: 15px;
+      }
+      .more-information{
+        font-weight: bold;
+      }
+      .link-test{
+        margin-top: 20px;
+      }
+      .History-title{
+            margin-left: 10px;
+            margin-top: 10px;
+            padding-bottom: 50px;
+            font-size: 23px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+      }
+      .History-text{
+        margin-left: 7px;
+        font-size: 19px;
+        margin-top: -34px;
+        margin-right: 5px;
+        display: block;
+        padding-bottom: 20px;
+      }
+      .Friends-name{
+        margin-left: 7px;
+        font-size: 19px;
+        margin-top: -10px;
+        margin-right: 5px;
+        display: block;
+        padding-bottom: 20px;
+      }
+      .Line-2{
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .line-e{
+            margin-left: 10px;
+            margin-top: -20px;
+            padding-bottom: 20px;
+        }
+        .Report{
+            color: red;
+        }
+        .Incident-box{
+            font-size: 19px;
+        }
+        .Incident-Text{
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-bottom: 10px;
+        }
+        .REDACTED-a{
+            background-color: rgb(187, 0, 17);
+            color: antiquewhite;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 0.2px;
+            padding-bottom: 1px;
+            border: 2px solid black;
+        }
+        .Incident-report-button-1{
+            padding-left: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        .Incident-report-button{
+            size: 50px;
+            
+        }
+        .Press-to-learn{
+            font-size: 20px;
+            font-weight: bold;
+        }    
+        .Note-Not-Real{
+            padding-left: 10px;
+            padding-top: 15px;
+            color: red;
+            font-family: Roboto;
+            font-weight: bolder;
+        } 
+       </style>
+</head>
+<body>
+    <div class="Password#SCP">
+        <script language='JavaScript'>
+            var Password = "SCP-ODIN"
+            while(k != Password){
+                var k = prompt("Enter Password:--> WARNING: THE FOUNDATION DATABASE IS [CLASSIFIED] ACCESS BY UNAUTHORIZED PERSONNEL IS STRICTLY PROHIBITED, PERPETRATORS WILL BE TRACKED, LOCATED, AND DETAINED.")
+        
+                if(k != Password){
+                    alert('Wrong Password')
+                }
+            }
+        </script>
+        </div>
+    <div class="bk-square">
+        <div class="Scp-connected-to">
+          <div class="SCP-ODIN">SCP-ODIN</div>
+          <div class="Obj-class"> <a class="Object-Class">Object Class:</a> Euclid</div>
+          <div class="Connected-to">🔗 Connected to: <a class="Redacted">Redacted</a></div>
+        </div>
+        <div class="Scp-odin-pic"><img src="SCP-ODIN-pic.png" alt="" class="Scp-odin-size"></div>
+        <div class="Special-Containtment">Special Containment Procedures</div>
+        <div class="Special-Containtment-text">SCP-ODIN is to be kept in a standard home with its owners.  The house requires basic furnishings for SCP-ODIN and its handler - bedding, food, water, etc. SCP-ODIN and its handlers are permitted to roam outside the house with supervision. Unless there are any sightings of dogs or cats in the area. The subject has shown extreme aggression toward said animals.</div>
+        <div class="Special-Containtment-text">Personnel who come in contact with SCP-ODIN are not permitted to show things that produce air, like blowing your mouth, air pumps, and so on:  SCP-ODIN is extremely hostile to such items. with the exception of electric fans and air conditioning. For the same reason, personnel who come in contact with SCP-ODIN are not permitted to physically fight with anyone in sight of the SCP, this also includes the handlers of SCP-ODIN.</div>
+        <div class="Line"> ━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        <div class="SCP-ODIN-TEXT">SCP-ODIN.</div>
+
+        <div class="picture-warning">
+            <div><img src="Euclid.png" alt="" class="Euclid-img"></div>
+            <div><img src="Sentient.png" alt="" class="Sentient-img"></div>    
+            <div><img src="Adictive.png" alt="" class="Adictive-img"></div>
+        </div>
+
+        <div class="Description">Description:</div>
+        <div class="description-1">SCP-ODIN presents as a male dog of the Lhasa apso breed: based on analysis, the subject's age is approximately five (5) years old or 36 years old in human years. The subject appears to be physically normal beyond five (5) significant abilities that make the subject an anomaly:</div>
+        
+        <div class="Description-text">
+            <div class="description-2">1. The subject can produce barks louder than a gunshot. This doesn't affect the handler of SCP-ODIN.
+            <div class="description-3">2. The subject can change its speed based on the situation, the fastest SCP-ODIN has been seen is about 80 - 130 km/h.</div>
+            <div class="description-4">3. The subject's bite has a paralyzing effect like a snake that can last up to 15-40 minutes.  This too doesn't affect the handler.</div>
+            <div class="description-5">4. The “lick” of the subject has a healing effect on wounds, broken bones, and so on. We still don't know how this happens.</div>
+            <div class="description-6">5. The subject has a razor-sharp teeth that can pierce any clothing and armor.</div>
+            <div class="Note-description"><a class="Note-css">Note*</a> All of these abilities can be amplified when the subject is angry, scared, sad, or hungry.</div>
+            <div class="link-text">Those are the 5 recorded abilities of SCP-ODIN. <a class="more-information" >(Some of the information about SCP-ODIN are redacted)</a> [<a href="learn-more-SCP-ODIN.html" class="learn-more-SCP-ODIN">Learn more about the abilities of SCP-ODIN<a>]</div>
+            <div class="Line-2">  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        </div>
+
+        <div class="History-All">
+            <div class="History-title">History:</div>
+            <div class="History-text">We have little to no information on where SCP-ODIN originally came from before the handlers got it. All we know is that the handlers bought SCP-ODIN from a friend, Although personnel found out that the “friend” never existed, I mean it did exist just 100 years ago(1921). We checked the database but there was no other name as of today.</div>
+            <div class="Friends-name">Friend's name:  ███ ███████</div>
+            <div class="line-e">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        </div>
+        <div class="Incident-box">
+            <div class="Incident-Text"><a class="Report">[Report-1]</a>: Two SCP personnel visited the home of the handlers of SCP-ODIN. The purpose of the visit is to check the health of SCP-ODIN. At first, everything went well, until one of the personnel started to play with SCP-ODIN. He mistakenly started to blow his mouth right in front of the subject. And as we know in the “Special Containment Procedures” SCP-ODIN is extremely hostile to said actions. Then SCP-ODIN got aggressive and attacked the personnel. SCP-ODIN barked, so everyone except the handlers got deafened. After barking, the subject bit the personnel so he got paralyzed. And then <a class="REDACTED-a">REDACTED</a> </div>
+            <div class="Line-2">  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        </div>
+        <div>
+            <div class="Incident-report-button">
+                <a  href="Incident-log.html" class="Incident-report-button-1">[Incident log-1]</a><a class="Press-to-learn"> Press for more detail in the [Report-1].</a>
+            </div>
+        </div>
+        <div>
+            <div class="Note-Not-Real">NOTE ALL THE THE THINGS HERE IS NOT REAL. IT IS A STORY.</div>
+        </div>
+    </div>
+
+</body>
+</html>
